@@ -1,3 +1,5 @@
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import NotificationButtom from '../NotificationButtom'
 import './style.css'
 
@@ -9,10 +11,20 @@ function SalesCard() {
                 <h2 className="dsmeta-sales-title">Vendas</h2>
                 <div>
                     <div className="dsmeta-form-control-container">
-                        <input className="dsmeta-form-control" type="text" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="dsmeta-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                     <div className="dsmeta-form-control-container">
-                        <input className="dsmeta-form-control" type="text" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="dsmeta-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                 </div>
 
@@ -52,9 +64,9 @@ function SalesCard() {
                                 <td>R$ 55300.00</td>
                                 <td>
                                     <div className="dsmeta-red-btn-container">
-                                    <NotificationButtom />
+                                        <NotificationButtom />
                                     </div>
-                                    
+
                                 </td>
                             </tr>
                             <tr>
@@ -66,7 +78,7 @@ function SalesCard() {
                                 <td>R$ 55300.00</td>
                                 <td>
                                     <div className="dsmeta-red-btn-container">
-                                    <NotificationButtom />
+                                        <NotificationButtom />
                                     </div>
                                 </td>
                             </tr>
